@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* { margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;}  
+ 
+/* Containers */
+
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;}
+    
+.purple {
+    color: #6415ff;
+}    
+
+/* Top Menu */
+ .nav__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.nav__logo--img {
+    width: 40px;
+    height: 40px;
+ }
+.company__title {
+    font-size: 24px;
+    font-weight: 900;
+    color: #6030b1;
+    margin-left:12px;
+    padding-bottom: 2px;
+    }
+   
+h1, h2, h3, h4, h5, h6, span {
+    color: #242424;
+    text-align: center;
+    line-height: 1.25 ;
+}    
+
+li {
+    list-style: none;
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+}
+/* Links */
+.nav_links {
+    display: flex;
+    align-items: center;
+    gap: 80p
+}
+ 
+.nav_link--anchor {
+    margin: 0 12px;
+    color: #242424;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 8px 12px;
+}
+.nav_link--anchor-primary {
+    background-color: #6030b1;
+    padding: 8px 20px;
+    border-radius: 50px;
+    color: #fff;
+    transition: background-color #5d3eff 300ms ease;
+}
+.nav_link--anchor-primary:hover {
+    background-color: #5d3eff;
+}
