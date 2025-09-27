@@ -86,7 +86,7 @@ nav {
     background-color: #5d3eff;
 }
 /* CUSTOMERS */
-.container--customers {
+.box-wrapper {
     padding: 24px 24px 0px 24px;
     display:flex;
     justify-content: space-between;
