@@ -86,8 +86,10 @@ nav {
     background-color: #5d3eff;
 }
 /* CUSTOMERS */
-header {
-    padding: 64px 0;
+.container--customers {
+    padding: 24px 24px 0px 24px;
+    display:flex;
+    justify-content: space-between;
 }
 header .row {
     display: flex;
@@ -100,17 +102,13 @@ header .row {
     height: 100px;
     margin-top: 20px;
 }
-.box-wrapper {
-    flex: 1 1 50%;
-    padding-right: 0;
-}
 .header__img--figure {
     flex: 1 1 50%;
     display: flex;
     justify-content: flex-end;}
 .header__img--figure img {
     max-width: 550px;
-    width: 100%;
+    width: 60%;
     height: auto;
 }
 .header__description h1 {    font-size: 48px;
@@ -122,3 +120,4 @@ header__description para {
     margin-top: 18px;
     color: #555;
     max-width: 640px;}
+    
