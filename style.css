@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+/* GLOBAL STYLES */
 * { margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
     box-sizing: border-box;}  
  
-/* TOP MENU */
-
 .row {
     width: 100%;
     max-width: 1200px;
@@ -17,24 +17,20 @@
 .purple {
     color: #6415ff;
 }    
-.container {
+.nav__row {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
-}
- .nav__row {
-    display: flex;
+    display:flex;
     justify-content: space-between;
-    align-items: center;
-    height: 80px;
-    padding: 0 20px;
 }
 
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+/* LANDING */
+
+.nav__logo {
+    display: flex;
+    align-items: center;
 }
 .nav__logo--img {
     width: 40px;
@@ -65,7 +61,6 @@ nav {
 .nav_links {
     display: flex;
     align-items: center;
-    gap: 80p
 }
  
 .nav_link--anchor {
@@ -85,39 +80,4 @@ nav {
 .nav_link--anchor-primary:hover {
     background-color: #5d3eff;
 }
-/* CUSTOMERS */
-.box-wrapper {
-    padding: 24px 24px 0px 24px;
-    display:flex;
-    justify-content: space-between;
-}
-header .row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 48px;
-}
-.header__img--figure {
-    width: 100px;
-    height: 100px;
-    margin-top: 20px;
-}
-.header__img--figure {
-    flex: 1 1 50%;
-    display: flex;
-    justify-content: flex-end;}
-.header__img--figure img {
-    max-width: 550px;
-    width: 60%;
-    height: auto;
-}
-.header__description h1 {    font-size: 48px;
-    line-height: 1.1;
-    font-weight: 700;
-}
-header__description para {
-    font-size: 18px;
-    margin-top: 18px;
-    color: #555;
-    max-width: 640px;}
-    
+/* FEATURES */
