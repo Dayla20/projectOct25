@@ -42,7 +42,7 @@ button {
     margin-bottom: 16px;
     text-align: center;
     text-transform: uppercase;
-    text-align: left;
+    text-align: center;
     }
 .section__title {
     font-size: 48px;
@@ -269,6 +269,9 @@ header img {
     max-width: 600px;
     text-align: center;
     }
+#features .section__tag {
+    text-align: center;
+    }
 .features {
     display: flex;
     flex-wrap: wrap;
@@ -306,6 +309,7 @@ header img {
     background-color: #f0f0ff;
     border-radius: 50%;
 }
+/* QUALITY */
 #quality .row {
   display: flex;
   justify-content: space-between;
@@ -315,20 +319,21 @@ header img {
   margin: 0 auto;
 }
 
-/* === LEFT SIDE (TEXT) === */
+/* === Left Side (TEXT) === */
 .quality__description {
   flex: 1 1 50%;
   max-width: 540px;
   text-align: left;
 }
 
-.section__tag {
+#quality .section__tag {
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 1.8px;
   text-transform: uppercase;
   color: #6415ff;
   margin-bottom: 16px;
+    text-align: left;
 }
 
 .section__title {
@@ -338,7 +343,7 @@ header img {
   letter-spacing: -0.5px;
   color: #243e63;
   margin-bottom: 24px;
-  text-align: left !important;
+  
 }
 
 .section__title .purple {
@@ -368,7 +373,7 @@ header img {
   background-color: #4b0fcf;
 }
 
-/* === RIGHT SIDE (IMAGE + GRID) === */
+/* === Right Side (IMAGE + GRID) === */
 .quality__img--wrapper {
   position: relative;
   flex: 1 1 50%;
@@ -380,25 +385,25 @@ header img {
 }
 
 .quality__img {
-  width: 85%; /* scale as the example */
+  width: 100%; /* scale as the example */
   max-width: 560px;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(36, 62, 99, 0.15);
   position: relative;
-  z-index: 2; /* above grid */
+  z-index: 1; /* above grid */
 }
 
-/* === PURPLE DOT GRID BEHIND IMAGE === */
+/* === Purple dot grid behind image === */
 .quality__grid {
+  transform: translateX(50%) translateY(50%) scaleX(1) scaleY(1);
+  width: 80px;
+  height: 80px;
   position: absolute;
-  width: 128px;
-  height: 128px;
-  right: -40px;  /* placement behind bottom-right corner */
-  bottom: -40px;
-  z-index: 1;    /* behind the image */
-  opacity: 0.25;
-  color: #6415ff;
-  fill: currentColor;
-  transform: scale(1);
+  right: 0px;  /* placement behind bottom-right corner */
+  bottom: 0px;
+  z-index: 0;    /* behind the image */
+  color: #4b08d2;
+  fill: rgb(69, 13, 181);
 }
+/* STEPS*/
