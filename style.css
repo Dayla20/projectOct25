@@ -522,7 +522,7 @@ header img {
   gap: 48px;
   max-width: 1200px;
   margin: 0 auto;
-  grid-template-columns: 1fr 1fr; /* fake two columns */
+ 
 }
 
 .values__description,
@@ -535,20 +535,59 @@ header img {
     height: auto;
     display: block;
   }
-
-
-/* Keep the same typographic & list styles*/
-#values .section__tag { color:#6415ff; font-weight:700; letter-spacing:1.8px; text-transform:uppercase; margin-bottom:12px; }
-#values .section__title { font-size:48px; font-weight:800; line-height:1.25; letter-spacing:-0.5px; color:#243e63; margin-bottom:18px; }
-#values .section__para { font-size:18px; line-height:1.75; color:#7c8ba1; margin-bottom:28px; max-width:36rem; }
-.values__list { display:grid; grid-template-columns:1fr 1fr; gap:28px 32px; margin:28px 0 32px; }
-.value__title { display:flex; align-items:center; gap:12px; margin-bottom:8px; }
-.value_img--wrapper { width:36px; height:36px; border-radius:9999px; display:grid; place-items:center; }
-.values__list .value:nth-child(1) .value_img--wrapper { background:rgba(39,103,73,.1); }
-.values__list .value:nth-child(2) .value_img--wrapper { background:rgba(155,44,44,.1); }
-.value__name { font-size:18px; font-weight:700; color:#243e63; }
-.value__para { font-size:16px; line-height:1.8; color:#7c8ba1; }
-#values .btn { margin-top:8px; }
+#values .section__tag { 
+    color:#6415ff;
+    font-weight:900;
+    letter-spacing:1.8px;
+    text-transform:uppercase;
+    margin-bottom:12px;
+    text-align: left;
+ }
+#values .section__title {
+    font-size:48px;
+    font-weight:800;
+    line-height:1.25;
+    letter-spacing:-0.5px;
+    color:#243e63;
+    margin-bottom:18px; }
+#values .section__para { 
+    font-size:18px;
+    line-height:1.75;
+    color:#7c8ba1;
+    margin-bottom:28px;
+    max-width:36rem; }
+.values__list {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:28px 32px;
+    margin:28px 0 32px; }
+.value__title {
+    display:flex;
+    align-items:center;
+    gap:12px; margin-bottom:8px; }
+.value_img--wrapper {
+    width:36px; height:36px;
+    border-radius:9999px;
+    display:grid;
+    place-items:center; }
+.values__list .value:nth-child(1)
+.value_img--wrapper { 
+    background:#9ae6b4 }
+.values__list .value:nth-child(2)
+.value_img--wrapper { 
+    background:#feb2b2 }
+.value__name { 
+    font-size:18px;
+    font-weight:700;
+    color:#153b71; }
+.value__para {
+    font-size:16px;
+    line-height:1.8;
+    color:#7c8ba1; }
+  
+#value btn {
+    max-width: 100px;
+}
 /* Standard breakpoints */
 @media (max-width: 1280px) { /* large laptop */ }
 @media (max-width: 1024px) { /* tablet */ }
