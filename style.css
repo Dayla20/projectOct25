@@ -798,7 +798,6 @@ header img {
     display: flex;
     flex-direction: column;
     padding-left: 64px;
-
 }
 #testimonials .section__tags{
     color: #6415ff;
@@ -836,10 +835,7 @@ header img {
     font-size: 16px;
     color: rgb(119, 131, 152);
 }
-.testimonial__bottom {
-    display: flex;
-    justify-content: space-between;
-}
+
 .testimonial__profile {
     display: flex;
     align-items: center;
@@ -853,32 +849,31 @@ header img {
 .testimonial__details {
     margin-left: 24px;
 }
-#testimonials .testimonial__bottom {
+.testimonial__bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 16px;
 }
-#testimonials .testimonial_profile{
+.testimonial_profile{
   display:flex;
   align-items:center;
   gap:12px;
   min-width:0;
   flex:1 1 auto;
 }
-#testimonials .testimonial__buttons{
+.testimonial__buttons{
   display:flex;
   align-items:center;
   gap:16px;
   
 }
-#testimonials .testimonial_button {
+.testimonial_button {
   /* wipe any default/button styles that might leak in */
   all: unset;
   display: flex;
   align-items: center;
   justify-content: center;
-
   width: 56px;
   height: 56px;
   border-radius: 50%;
@@ -911,4 +906,103 @@ header img {
   width: 1px;
   height: 32px;
   background: rgba(0,0,0,0.12);
+}
+
+/* START */
+.start__container{
+    position: relative;
+    overflow: hidden;
+    padding: 96px 0;
+    width: 100%;
+    background-color: rgb(100, 21, 255);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.start__row {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 0 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.start__title {
+    color: #f7fafc;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.5;
+    z-index: 2;}
+.start__title,
+.start__buttons {
+    width: 50%;
+}
+.start__buttons{
+    display: flex;
+    justify-content: flex-end;
+}
+.start__button {
+    padding: 20px 40px;
+    border-radius: 500px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #f7fafc;
+    line-height: 1.5;
+    letter-spacing: 0.025;
+    margin: 1px;
+    z-index: 2;
+}
+.start__button:nth-child(1) {
+    background: #f56565;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    margin-right: 32px;
+    transition: all 300ms 
+ease;
+}
+.start__button:nth-child(1):hover {
+  background: #e53e3e; /* slightly deeper red */
+  transform: translateY(-3px);
+  box-shadow: 0 15px 25px -5px rgba(0, 0, 0, 0.15);
+}
+.start__button:nth-child(2) {
+    border: 1px solid rgb(160, 174, 192);
+    transition: all 300ms 
+ease;
+}
+start__button:nth-child(2):hover {
+  background: #fff;
+  color: rgb(100, 21, 255); /* same purple as section background */
+  transform: translateY(-3px);
+  box-shadow: 0 15px 25px -5px rgba(0, 0, 0, 0.15);
+}
+.start__bloob--1,
+.start__bloob--2 {
+  position: absolute;
+  z-index: 1;                  /* behind the content */
+  pointer-events: none;        /* blobs don't block clicks */
+  color: rgb(80 17 204);
+  opacity: 0.65;
+
+}
+
+/* bottom-left blob */
+.start__bloob--1 {
+  bottom: 0;
+  left: 0;
+  width: 20rem;
+  height: 20rem;
+  transform: translate(-5rem, 8rem);
+}
+
+/* top-right blob */
+.start__bloob--2 {
+  top: 0;
+  right: 0;
+  width: 20rem;
+  height: 20rem;
+  transform: translate(5rem, -16rem);
 }
