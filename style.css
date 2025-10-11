@@ -778,7 +778,11 @@ header img {
 
   /*TESTIMONIALS*/
 
-  #testimonials .row {
+#testimonials .container {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+#testimonials .row {
     margin-left: auto;
     margin-right: auto;
     max-width: 1280px;
@@ -786,14 +790,15 @@ header img {
     align-items: center;
     justify-content: space-between;
 }
-.testimonials__img{
-    width: 40%;
+.testimonials__img,
+.testimonials_description {
+    width: 50%;
 }
 .testimonials_description {
-    width: calc(100%-40%);
     display: flex;
     flex-direction: column;
-    padding-left:64px;
+    padding-left: 64px;
+
 }
 #testimonials .section__tags{
     color: #6415ff;
@@ -802,10 +807,83 @@ header img {
     text-transform: uppercase;
 }
 
+#testimonials .section__title {
+    margin-bottom: 24px;
+    line-height: 1.25px;
+    
+}
+.testimonial__rating .fa-solid.fa-star{
+    color:#F6AD55;
+    margin-right: 2px;
+    margin-top: 4px;
+}
+#testimonials .section__para {
+    color: #7c8ba1;
+}
+.testimonial__title {
+    color: #4a5568;
+    line-height: 1.625;
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    font-weight: 700;  
+    margin-top: 40px;
+}
+.testimonial__para {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    line-height: 1.625;
+    font-size: 16px;
+    color: rgb(119, 131, 152);
+}
+.testimonial__bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.testimonial__profile {
+    display: flex;
+    align-items: center;
+}
+
 .testimonial__img{
     width: 80px;
     height: 80px;
+    border-radius: 50%;
 }
-  .fa-solid fa-star{
-    color:#fabf2a
-  }
+.testimonial__details {
+    margin-left: 24px;
+}
+#testimonials .testimonial__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+#testimonials .testimonial_profile{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  min-width:0;
+  flex:1 1 auto;
+}
+#testimonials .testimonial__buttons{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  flex:0 0 auto;
+}
+.testimonial__button {
+    display: flex;
+    padding: 16px;
+    background-color: rgb(85, 13, 228);
+ 
+}
+
+#testimonials .testimonial_button{
+  width:44px;height:44px;border-radius:9999px;
+  border:1px solid rgba(100,21,255,0.4);
+  background:transparent;display:grid;place-items:center;
+  cursor:pointer;transition:transform .15s ease; background: .15s ease;
+}
+#testimonials .testimonial_button:hover{background:rgba(100,21,255,.06);transform:translateY(-1px)}
+#testimonials .divider{width:1px;height:28px;background:rgba(0,0,0,0.1)}
