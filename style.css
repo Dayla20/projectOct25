@@ -791,10 +791,10 @@ header img {
     justify-content: space-between;
 }
 .testimonials__img,
-.testimonials_description {
+.testimonials__description {
     width: 50%;
 }
-.testimonials_description {
+.testimonials__description {
     display: flex;
     flex-direction: column;
     padding-left: 64px;
@@ -809,7 +809,7 @@ header img {
 
 #testimonials .section__title {
     margin-bottom: 24px;
-    line-height: 1.25px;
+    line-height: 1.25;
     
 }
 .testimonial__rating .fa-solid.fa-star{
@@ -869,21 +869,46 @@ header img {
 #testimonials .testimonial__buttons{
   display:flex;
   align-items:center;
-  gap:12px;
-  flex:0 0 auto;
+  gap:16px;
+  
 }
-.testimonial__button {
-    display: flex;
-    padding: 16px;
-    background-color: rgb(85, 13, 228);
- 
+#testimonials .testimonial_button {
+  /* wipe any default/button styles that might leak in */
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #f3f6fb;                 /* soft light gray circle */
+  border: 1px solid rgba(0,0,0,.04);
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);/* subtle shadow */
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: background .2s ease, transform .15s ease;
 }
 
-#testimonials .testimonial_button{
-  width:44px;height:44px;border-radius:9999px;
-  border:1px solid rgba(100,21,255,0.4);
-  background:transparent;display:grid;place-items:center;
-  cursor:pointer;transition:transform .15s ease; background: .15s ease;
+#testimonials .testimonial_button:hover {
+  background: #eef1f7;
+  transform: translateY(-1px);
 }
-#testimonials .testimonial_button:hover{background:rgba(100,21,255,.06);transform:translateY(-1px)}
-#testimonials .divider{width:1px;height:28px;background:rgba(0,0,0,0.1)}
+/* SVG chevrons inside the buttons */
+#testimonials .testimonial_button svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+  fill: none;                   /* important: no fill */
+  stroke: rgb(100, 21, 255);           
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Thin divider between the two buttons */
+#testimonials .divider {
+  width: 1px;
+  height: 32px;
+  background: rgba(0,0,0,0.12);
+}
