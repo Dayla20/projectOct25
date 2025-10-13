@@ -77,13 +77,15 @@ img {
 nav {
     height: 80px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
  .nav__row {
-     width: 100%;
-     max-width: 1200px;
-     margin: 0 auto;
-     padding: 0 24px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -151,6 +153,7 @@ body {
     transition: all 300ms ease;
 }
 .btn__menu--close {
+    position: absolute;
     position: fixed;
     top: 24px;
     right: 18px;
@@ -187,8 +190,6 @@ a {
         display: block;
     }
 }
-
-
 
 /* Standard breakpoints */
 @media (max-width: 1280px) { /* large laptop */ }
