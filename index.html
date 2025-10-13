@@ -9,10 +9,10 @@
       src="https://kit.fontawesome.com/b1ece09841.js"
       crossorigin="anonymous"
     ></script>
-    <script src="index.js"></script>
+    <script src="./index.js"></script>
   </head>
 
-  <body>
+  <body data-new-gr-c-s-check-loaded="14.1257.0" data-gr-ext-installed cz-shortcut-listen="true" class="menu--open">
     <!--LANDING-->
     <section id="landing">
       <nav>
@@ -23,57 +23,63 @@
               src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg"
               alt="logo"
             />
-            <span class="company__title">TREACT</span>
+            <div class="nav__logo--title">TREACT</div>
           </div>
-          <ul class="nav_links">
-            <li>
-              <a
-                href="#"
-                class="nav_link--anchor link_hover-effect link_hover-effect--black"
-              >
-                About</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="nav_link--anchor link_hover-effect link_hover-effect--black"
-              >
-                Blog</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="nav_link--anchor link_hover-effect link_hover-effect--black"
-              >
-                Pricing</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="nav_link--anchor link_hover-effect link_hover-effect--black"
-              >
-                Contact Us</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="nav_link--anchor link_hover-effect link_hover-effect--black"
-              >
-                Login</a
-              >
-            </li>
-            <li>
-              <a href="#" class="nav_link--anchor nav_link--anchor-primary">
-                Sign Up</a
-              >
-            </li>
-          </ul>
+          <div class="nav_links">
+            <a 
+              href="#"
+              class="nav_link--anchor link_hover-effect link_hover-effect--black"
+              >About</a
+            >
+
+            <a
+              href="#"
+              class="nav_link--anchor link_hover-effect link_hover-effect--black"
+              >Blog</a
+            >
+
+            <a
+              href="#"
+              class="nav_link--anchor link_hover-effect link_hover-effect--black"
+              >Pricing</a
+            >
+
+            <a
+              href="#"
+              class="nav_link--anchor link_hover-effect link_hover-effect--black"
+              >Contact Us</a
+            >
+
+            <a
+              href="#"
+              class="nav_link--anchor link_hover-effect link_hover-effect--black"
+              >Login</a
+            >
+
+            <a href="#" class="nav_link--anchor nav_link--anchor-primary"
+              >Sign Up</a
+            >
+          </div>
+          <!--Responsiveness - Burger Button----------------->
+          <button class="btn__menu" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
+          </div>
         </div>
       </nav>
+         <div class="menu">
+           <button class="btn__menu btn__menu--close" onclick="closeMenu">
+              <i class="fas fa-times"></i>
+            </button>
+            <div class="menu__links">
+                  <a href="#about" class="menu__link" onclick="closeMenu()">About</a>
+                  <a href="#blog" class="menu__link" onclick="closeMenu()">Blog</a>
+                  <a href="#pricing" class="menu__link" onclick="closeMenu()">Pricing</a>
+                  <a href="#contact__us" class="menu__link" onclick="closeMenu()">Contact Us</a>
+                  <a href="#login" class="menu__link" onclick="closeMenu()">Login</a>
+                  <a href="#signup" class="menu__link menu__link--primary" onclick="closeMenu()">Sign up</a>
+            </div>  
+         </div>
     </section>
     <main>
       <!--Header-->
@@ -90,7 +96,7 @@
               </p>
               <div class="header__email">
                 <input
-                  type="email"
+                type="email"
                   class="header__email--input"
                   placeholder="Your email address"
                 />
@@ -283,30 +289,12 @@
                 </defs>
                 <!-- Repeat six times with vertical spacing -->
                 <g fill="rgba(100, 21, 255, 0.15)">
-                  <use
-                    href="#line-of-balls"
-                    transform="translate(0, 400)"
-                  ></use>
-                  <use
-                    href="#line-of-balls"
-                    transform="translate(0, 500)"
-                  ></use>
-                  <use
-                    href="#line-of-balls"
-                    transform="translate(0, 600)"
-                  ></use>
-                  <use
-                    href="#line-of-balls"
-                    transform="translate(0, 700)"
-                  ></use>
-                  <use
-                    href="#line-of-balls"
-                    transform="translate(0, 800)"
-                  ></use>
-                  <use
-                    href="#line-of-balls"
-                    transform="translate(0, 900)"
-                  ></use>
+                  <use href="#line-of-balls" transform="translate(0,400)"></use>
+                  <use href="#line-of-balls" transform="translate(0,500)"></use>
+                  <use href="#line-of-balls" transform="translate(0,600)"></use>
+                  <use href="#line-of-balls" transform="translate(0,700)"></use>
+                  <use href="#line-of-balls" transform="translate(0,800)"></use>
+                  <use href="#line-of-balls" transform="translate(0,900)"></use>
                 </g>
               </svg>
             </figure>
@@ -622,7 +610,7 @@
           <div class="row">
             <div class="start__container">
               <svg viewBox="0 0 600 600" class="start__bloob--1">
-                <g transform="translate (300,300)">
+                <g transform="translate(300,300)">
                   <path
                     d="M 153.6 -239 C 199.1 -209.8 236 -167.2 258.4 -118 C 280.9 -68.9 288.9 -13.1 281.2 40.4 C 273.5 93.9 250.1 145.2 214.7 186.1 C 179.3 226.9 131.9 257.4 80 272.6 C 28.2 287.8 -28.2 287.8 -80 272.6 C -131.9 257.4 -179.3 226.9 -214.7 186.1 C -250.1 145.2 -273.5 93.9 -281.2 40.4 C -288.9 -13.1 -280.9 -68.9 -258.4 -118 C -236 -167.2 -199.1 -209.8 -153.6 -239 C -108.1 -268.3 -54.1 -284.1 0 -284.1 C 54.1 -284.1 108.1 -268.3 153.6 -239 Z"
                     fill="rgb(80,17,804)"
@@ -630,10 +618,10 @@
                 </g>
               </svg>
               <svg viewBox="0 0 600 600" class="start__bloob--2">
-                <g transform="translate (300,300)">
+                <g transform="translate(300,300)">
                   <path
                     d="M 153.6 -239 C 199.1 -209.8 236 -167.2 258.4 -118 C 280.9 -68.9 288.9 -13.1 281.2 40.4 C 273.5 93.9 250.1 145.2 214.7 186.1 C 179.3 226.9 131.9 257.4 80 272.6 C 28.2 287.8 -28.2 287.8 -80 272.6 C -131.9 257.4 -179.3 226.9 -214.7 186.1 C -250.1 145.2 -273.5 93.9 -281.2 40.4 C -288.9 -13.1 -280.9 -68.9 -258.4 -118 C -236 -167.2 -199.1 -209.8 -153.6 -239 C -108.1 -268.3 -54.1 -284.1 0 -284.1 C 54.1 -284.1 108.1 -268.3 153.6 -239 Z"
-                    fill="rgb(80,17,804)"
+                    fill="rgb(80,17,204)"
                   ></path>
                 </g>
               </svg>
