@@ -9,10 +9,10 @@
       src="https://kit.fontawesome.com/b1ece09841.js"
       crossorigin="anonymous"
     ></script>
-   <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
   </head>
 
-  <body data-new-gr-c-s-check-loaded="14.1257.0" data-gr-ext-installed cz-shortcut-listen="true" class="menu--open">
+  <body>
     <!--LANDING-->
     <section id="landing">
       <nav>
@@ -26,7 +26,7 @@
             <div class="nav__logo--title">TREACT</div>
           </div>
           <div class="nav_links">
-            <a 
+            <a
               href="#"
               class="nav_link--anchor link_hover-effect link_hover-effect--black"
               >About</a
@@ -64,22 +64,30 @@
           <button class="btn__menu" onclick="openMenu()">
             <i class="fas fa-bars"></i>
           </button>
-          </div>
         </div>
       </nav>
-         <div class="menu">
-           <button class="btn__menu btn__menu--close" onclick="closeMenu">
-              <i class="fas fa-times"></i>
-            </button>
-            <div class="menu__links">
-                  <a href="#about" class="menu__link" onclick="closeMenu()">About</a>
-                  <a href="#blog" class="menu__link" onclick="closeMenu()">Blog</a>
-                  <a href="#pricing" class="menu__link" onclick="closeMenu()">Pricing</a>
-                  <a href="#contact__us" class="menu__link" onclick="closeMenu()">Contact Us</a>
-                  <a href="#login" class="menu__link" onclick="closeMenu()">Login</a>
-                  <a href="#signup" class="menu__link menu__link--primary" onclick="closeMenu()">Sign up</a>
-            </div>  
-         </div>
+      <div class="menu">
+        <div class="menu__links">
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+            <i class="fas fa-times"></i>
+          </button>
+          <a href="#values" class="menu__link" onclick="closeMenu()">About</a>
+          <a href="#quality" class="menu__link" onclick="closeMenu()">Blog</a>
+          <a href="#pricing" class="menu__link" onclick="closeMenu()"
+            >Pricing</a
+          >
+          <a href="#testimonials" class="menu__link" onclick="closeMenu()"
+            >Contact Us</a
+          >
+          <a href="#start" class="menu__link" onclick="closeMenu()">Login</a>
+          <a
+            href="#signup"
+            class="menu__link menu__link--primary"
+            onclick="closeMenu()"
+            >Sign up</a
+          >
+        </div>
+      </div>
     </section>
     <main>
       <!--Header-->
@@ -96,7 +104,7 @@
               </p>
               <div class="header__email">
                 <input
-                type="email"
+                  type="email"
                   class="header__email--input"
                   placeholder="Your email address"
                 />
