@@ -573,13 +573,10 @@ header .row {
 
 .values__description,
 .values_img {
-    grid-column: 2;
     justify-self: center;
-    width: 100%;
     width: 50%;
     max-width: 560px;
     height: auto;
-    display: block;
   }
 #values .section__tag { 
     color:#6415ff;
@@ -603,10 +600,11 @@ header .row {
     margin-bottom:28px;
     max-width:36rem; }
 .values__list {
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:28px 32px;
-    margin:28px 0 32px;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+    max-width: none;
+    flex-direction: row;
  }
 .value__title {
     display:flex;
